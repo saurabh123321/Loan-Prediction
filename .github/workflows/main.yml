@@ -1,2 +1,8 @@
-- name: Python Syntax Checker
-  uses: cclauss/Find-Python-syntax-errors-action@0.1.1
+workflow "Example Workflow" {
+  on = "push"
+  resolves = ["Lint"]
+}
+
+action "Lint" {
+  uses = "lgeiger/pyflakes-action@master"
+}
