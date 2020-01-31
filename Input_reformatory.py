@@ -7,5 +7,5 @@ while rf != "":
     rf = input_file.readline()
 final_input = []
 for i in temp_input:
-    final_input.append(i.split(" "))
+    final_input.append(i.split(","))
 print(final_input)
