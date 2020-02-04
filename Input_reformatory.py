@@ -1,7 +1,9 @@
-file_name = input("Enter the location of file\n")  # this may change
-input_file = open(file_name, "r")
+import csv
+file_name = input("Enter the location of file")  # this may change
+input_file = open("train.csv", "r")   # directly added data file in the project folder with address C:\Users\khule\PycharmProjects\Loan-Prediction
+
 temp_input = []
-rf = input_file.readline()
+rf = input_file.read()
 while rf != "":
     temp_input.append(rf)
     rf = input_file.readline()
